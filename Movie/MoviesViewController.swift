@@ -20,7 +20,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.gray
+        navigationController?.navigationBar.barTintColor = UIColor.gray
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
